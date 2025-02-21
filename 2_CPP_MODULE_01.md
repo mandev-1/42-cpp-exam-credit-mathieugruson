@@ -15,6 +15,7 @@
      	A. void learnSpell(ASpell* spell);  
      	B. void forgetSpell(std::string SpellName);
      	C. void launchSpell(std::string SpellName, ATarget const & target);
+		E. [Go to New Warlock Spells](#new-warlock-spells)
   
 [Subject](cpp_module_01/subject.txt)
 
