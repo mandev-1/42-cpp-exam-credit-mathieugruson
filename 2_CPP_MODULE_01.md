@@ -16,11 +16,13 @@
 > We will add **Spells**, **Target**, and _improve Warlock _so that he can **_Cast_**.
 
 ```cpp
-#include "Warlock.hpp"
+//First, we implement:
 #include "ASpell.hpp"
+#include "Fwoosh.hpp"
+
+//Second, we implement:
 #include "ATarget.hpp"
 #include "Dummy.hpp"
-#include "Fwoosh.hpp"
 ```
 
 
@@ -33,23 +35,34 @@
 #include <iostream>
 #include "ATarget.hpp"
 
+//We reference ATarget as we need to use it for launch (the cast)
 class ATarget;
 
-class ASpell 
+class ASpell
 {
-	protected :
-		std::string _name;
-		std::string _effects;
-	
-	public :
-		ASpell(std::string name, std::string effects);
-		ASpell & operator=(ASpell const & rhs);
-		ASpell(ASpell const & obj);
-		virtual ~ASpell();
-		std::string getName() const;
-		std::string getEffects() const;
-		virtual ASpell* clone() const = 0;
-		void launch(ATarget const & target) const;
+    protected:
+        std::string _name;
+        std::string _effects;
+    public:
+    // Standard Coplien: 
+    // 1.Constructor
+    // 2.Copy operator and Copy Constructor
+    // 3.Destructor (Virtual so children can use)
+        ASpell(std::string name, std::string effects);
+        ASpell & operator=(ASpell const & rhs);
+        ASpell(ASpell const & obj);
+        virtual ~ASpell();
+    // 4. Getters for the protected attributes (member functions)    // 5 
+        std::string getName() const;
+        std::string getEffects() const;
+    // 5. Assignment wants us to add a pure method 'Clone'
+    // Pure method means a pure virtual function
+    // It forces derived classes to implement the method
+    // Pure method is always virtual and is marked with = 0; The right sidd indicates the return is constant and has to be implemented in derived classes
+        virtual ASpell* clone() const = 0;
+    // 6. Also, the launch function is requested in subject. 
+    // The launch is called from the spell, thus we need to add the target to the prototype.
+        void launch(ATarget const & target) const;
 };
 ```
 
