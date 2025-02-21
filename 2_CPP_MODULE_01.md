@@ -7,17 +7,17 @@
 <img src="https://imgs.search.brave.com/_urWI0f3IjDIiqAC41aUbqk5g_JmhZzC0wMdVAPvJdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzcwLzY1LzQw/LzM2MF9GXzY3MDY1/NDAxOV9VY0xXMXZJ/QmZsSjVGYTlGaWFr/Q2NuS2RLUlh0VjNp/Qi5qcGc" alt="Mage casting a spell" height="240"/>
 
 
+-----
 
-_In this one, we will enhance the code from first excercise. We will add **Target** and **Cast spells**.
+In this one, we will enhance the code from first excercise. We will add **Target** and **Cast spells**. Check out the [Subject](cpp_module_01/subject.txt).
 1. We will add a SpellBook map to the Warlock's Privates : `std::map < std::string, ASpell * > _SpellBook;`
 2. The Warlock will get new functions:
 	1. `void learnSpell(ASpell* spell)`
 	2. `void forgetSpell(std::string SpellName)`
 	3. `void launchSpell(std::string SpellName, ATarget const & target)`
 	4. [Go to New Warlock Spells](#new-warlock-spells)
-  
-[Subject](cpp_module_01/subject.txt)
 
+------
 
 > We will add **Spell (Fwoosh)**, **Target (Dummy)**, and _improve Warlock _so that he can **_Cast Spells _** (Launch da spell at the target).
 
