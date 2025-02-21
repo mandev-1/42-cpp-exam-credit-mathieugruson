@@ -13,7 +13,7 @@
 [Subject](cpp_module_01/subject.txt)
 
 
-> We will add **Spells**, **Target**, and _improve Warlock _so that he can **_Cast_**.
+> We will add **Spell (Fwoosh)**, **Target (Dummy)**, and _improve Warlock _so that he can **_Cast Spells (Launch)(Launch spell at target)_**.
 
 ```cpp
 //First, we implement:
