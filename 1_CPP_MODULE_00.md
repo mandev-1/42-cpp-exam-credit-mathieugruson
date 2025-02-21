@@ -44,7 +44,9 @@ class Warlock
         //force mandatory Name;Title creation
         Warlock(const std::string& name, const std::string& title); // Public constructor - Name and Title
         ~Warlock();
-        //Getter returns string.                                      // 
+        //Getter returns string.
+        //On the left side, we say Return Type. So return type is a string constant reference.
+        //On the right side, we add qualifier. The const qualifier is a promise that we will not modify. So this makes it safe to use for Member Variables. This is called the "member function qualifier" 
         std::string const & getName() const;                        // Returns the private name.
         std::string const & getTitle() const;                       // Returns the private title.
         //Setter is Void
