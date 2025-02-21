@@ -275,6 +275,7 @@ class Warlock {
 
 
 ```cpp
+// ADJUSTMENTS TO WARLOCK.CPP
 // From:
 Warlock::~Warlock()
 {
