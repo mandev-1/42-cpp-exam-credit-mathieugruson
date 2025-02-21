@@ -7,6 +7,8 @@
 > In this one, he will start casting spells.
 > We will add **Spells**, **Target**, and _improve Warlock _so that he can **_Cast_**.
 
+![Mage casting a spell](https://imgs.search.brave.com/zO6UsiV5tNSGDxZR5PXtY_0bmjPdKzWVfCh1szr7iDw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmt5/bS1jZG4uY29tL3Bo/b3Rvcy9pbWFnZXMv/bmV3c2ZlZWQvMDAy/LzMwMC80ODkvOGQ3/LnBuZw)
+
 - His new functions will be learnSpell(), forgetSpell(), and launchSpell().
 - e need to make sure he can cast spells, and he has someone to shoot them at. This requires an abstract ASpell class, and abstract ATarget class which will then inherit into Fwoosh class (spell is a Fwoosh) and Dummy (target) class for the target.
 
