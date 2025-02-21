@@ -361,7 +361,7 @@ Warlock::~Warlock()
 
 > And we add these functions:
 ###### New Warlock Spells
-- These will leverage builtin map commands _.find, .end, .erase_
+- These will leverage builtin map commands _.find, .end, .erase_ [Go back up](#da-plan)
 
 ```cpp
 void Warlock::learnSpell(ASpell* spell)
