@@ -9,18 +9,23 @@
 
 
 _In this one, we will enhance the code from first excercise. We will add **Target** and **Cast spells**.
-_
-1. We will add a SpellBook map to the Warlock's Privates : **std::map < std::string, ASpell * > _SpellBook;**
+1. We will add a SpellBook map to the Warlock's Privates : `std::map < std::string, ASpell * > _SpellBook;`
 2. The Warlock will get new functions:
-	1. void learnSpell(ASpell* spell)
-	2. void forgetSpell(std::string SpellName)
-	3. void launchSpell(std::string SpellName, ATarget const & target)
+	1. `void learnSpell(ASpell* spell)`
+	2. `void forgetSpell(std::string SpellName)`
+	3. `void launchSpell(std::string SpellName, ATarget const & target)`
 	4. [Go to New Warlock Spells](#new-warlock-spells)
   
 [Subject](cpp_module_01/subject.txt)
 
 
 > We will add **Spell (Fwoosh)**, **Target (Dummy)**, and _improve Warlock _so that he can **_Cast Spells _** (Launch da spell at the target).
+
+1. The plan is Implementing `ASpell.hpp`
+2. Then Implementing `ATarget.hpp`
+3. Once done, we implement the `Fwoosh` and `Dummy`
+4. Last, we arejust the `Warlock.hpp` & `Warlock.cpp`
+5. We test using the provided `main.cpp` (and compile with `g++`)
 
 ```cpp
 //First, we implement:
@@ -33,7 +38,7 @@ _
 ```
 
 
-- His new functions will be learnSpell(), forgetSpell(), and launchSpell().
+- His new functions will be `learnSpell()`, `forgetSpell()`, and `launchSpell()`.
 
 ##### ASpell
 
