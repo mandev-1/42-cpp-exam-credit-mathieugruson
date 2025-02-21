@@ -32,6 +32,7 @@ class Warlock
         std::string _name;                        // Basic private assigned attribute _NAME
         std::string _title;                       // _TITLE attribute 
     public:
+        //force mandatory Name;Title 
         Warlock(const std::string& name, const std::string& title); // Public constructor - Name and Title
         ~Warlock();                                                 // 
         std::string const & getName() const;                        // Returns the private name.
