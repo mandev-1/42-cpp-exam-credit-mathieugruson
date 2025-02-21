@@ -70,24 +70,34 @@ class ASpell
 
 ```cpp
 // # ATARGET.hpp
+
+// ATarget is very similar to ASpell
+// We can copy paste here
 #pragma once
 #include <iostream>
 #include "ASpell.hpp"
 
+// Change this to mention ASpell
 class ASpell;
 
 class ATarget 
 {
 	protected :
+		// Change this to only have attribute type
 		std::string _type;
 	
 	public :
+		// Constructor only takes type -- adjust this
 		ATarget(std::string type);
 		ATarget & operator=(ATarget const & rhs);
 		ATarget(ATarget const & obj);
 		virtual ~ATarget();
+		// Only one getter -- for the type
 		std::string getType() const;
+
+// Same cloning
 		virtual ATarget* clone() const = 0;
+// Instead of a launch, Target gets hit by a spell
 		void	getHitBySpell(ASpell const & spell) const;
 };
 ```
