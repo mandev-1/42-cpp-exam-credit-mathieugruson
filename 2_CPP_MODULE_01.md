@@ -2,12 +2,11 @@
 
 ### Warlock Class Setup
 
-> Great job on the first one! The Warlock is basically already setup.
->
+> Great job on the first one!
 
 <img src="https://imgs.search.brave.com/_urWI0f3IjDIiqAC41aUbqk5g_JmhZzC0wMdVAPvJdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzcwLzY1LzQw/LzM2MF9GXzY3MDY1/NDAxOV9VY0xXMXZJ/QmZsSjVGYTlGaWFr/Q2NuS2RLUlh0VjNp/Qi5qcGc" alt="Mage casting a spell" height="240"/>
 
-> In this one, he will start casting spells.
+- In this one, we will enhance the code from first excercise. We will hit Target and Cast spells.
 > We will add **Spells**, **Target**, and _improve Warlock _so that he can **_Cast_**.
 
 - His new functions will be learnSpell(), forgetSpell(), and launchSpell().
