@@ -41,7 +41,10 @@ class Warlock
         std::string _name;                        // Basic private assigned attribute _NAME
         std::string _title;                       // _TITLE attribute 
     public:
-        //force mandatory Name;Title creation
+        //force how we Create the Warlock
+        //Add destructor
+        //Implement the function (introduce());
+        //2x getter for the member variables and 1x setter for the member var. 'title'
         Warlock(const std::string& name, const std::string& title); // Public constructor - Name and Title
         ~Warlock();
         //Getter returns string.
