@@ -66,6 +66,32 @@ class ASpell
 };
 ```
 
+###### ATarget
+
+```cpp
+// # ATARGET.hpp
+#pragma once
+#include <iostream>
+#include "ASpell.hpp"
+
+class ASpell;
+
+class ATarget 
+{
+	protected :
+		std::string _type;
+	
+	public :
+		ATarget(std::string type);
+		ATarget & operator=(ATarget const & rhs);
+		ATarget(ATarget const & obj);
+		virtual ~ATarget();
+		std::string getType() const;
+		virtual ATarget* clone() const = 0;
+		void	getHitBySpell(ASpell const & spell) const;
+};
+```
+
 ```cpp
 #include "ASpell.hpp"
 
@@ -166,31 +192,7 @@ ASpell* Fwoosh::clone() const
 > The Target Is set to have getType() and getHitBySpell() functions. Aside of the Coplien requirements. Its only attribute is the protected _type
 > The Dummy is then supposed to be called "Target Practice Dummy"
 
-###### ATarget + Dummy:
-
-```cpp
-// # ATARGET.hpp
-#pragma once
-#include <iostream>
-#include "ASpell.hpp"
-
-class ASpell;
-
-class ATarget 
-{
-	protected :
-		std::string _type;
-	
-	public :
-		ATarget(std::string type);
-		ATarget & operator=(ATarget const & rhs);
-		ATarget(ATarget const & obj);
-		virtual ~ATarget();
-		std::string getType() const;
-		virtual ATarget* clone() const = 0;
-		void	getHitBySpell(ASpell const & spell) const;
-};
-```
+###### ATarget cpp
 
 
 ```cpp
