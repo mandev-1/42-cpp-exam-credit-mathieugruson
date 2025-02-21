@@ -245,7 +245,7 @@ ATarget* Dummy::clone() const
 > We will also adjust the destructor, which is needed for the SpellBook deletions
 > We adjust the Warlock:
 ```cpp
-// His Header will now look like this:
+// NEW HEADER:
 #include <iostream>
 #include <map>
 #include "ASpell.hpp"
