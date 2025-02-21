@@ -29,7 +29,7 @@ class Warlock
 //In Private, I set name, title
 //I disallow empty constructor by adding it to Private
 //Disallow Copying (using =) and via creation copying(Using Warlock(Warlock))
-        Warlock & operator=(Warlock const & rhs); // Private - prevent unwanted copying
+        Warlock & operator=(Warlock const & rhs); // Private - prevent unwanted copying This follows left-to-right reading: "Warlock that is const and is a reference"
         Warlock(Warlock const & obj);             // Private - enforce controlled creation.
         Warlock();                                // Private - restrict instantiation without parameters.
         std::string _name;                        // Basic private assigned attribute _NAME
