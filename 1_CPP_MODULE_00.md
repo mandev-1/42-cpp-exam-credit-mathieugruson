@@ -22,19 +22,20 @@ The Warlock class is required to have these things:
 ```cpp
 #pragma once
 #include <iostream>
+
 class Warlock
 {
     private:
-        Warlock & operator=(Warlock const & rhs); // Disabled copy assignment to prevent unwanted copying.
-        Warlock(Warlock const & obj);             // Disabled copy constructor to enforce controlled creation.
-        Warlock();                                // Private default constructor to restrict instantiation without parameters.
-        std::string _name;                        // Holds the warlock's name for identification.
-        std::string _title;                       // Holds the warlock's title to signify its role or rank.
+        Warlock & operator=(Warlock const & rhs); // Private - prevent unwanted copying
+        Warlock(Warlock const & obj);             // Private - enforce controlled creation.
+        Warlock();                                // Private - restrict instantiation without parameters.
+        std::string _name;                        // Basic private assigned attribute _NAME
+        std::string _title;                       // _TITLE attribute 
     public:
-        Warlock(const std::string& name, const std::string& title); // Public constructor requiring name and title.
-        ~Warlock();                                                 // Destructor for cleaning up resources if needed.
-        std::string const & getName() const;                        // Returns the warlock's name.
-        std::string const & getTitle() const;                       // Returns the warlock's title.
+        Warlock(const std::string& name, const std::string& title); // Public constructor - Name and Title
+        ~Warlock();                                                 // 
+        std::string const & getName() const;                        // Returns the private name.
+        std::string const & getTitle() const;                       // Returns the private title.
         void setTitle(std::string const & str);                     // Sets a new title for the warlock.
         void introduce() const;                                     // Prints or logs an introduction message.
 };
