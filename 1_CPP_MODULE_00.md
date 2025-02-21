@@ -14,6 +14,11 @@ The Warlock class is required to have these things:
 - Getters and setters
 - An introduce() function
 
+### Header File
+
+[Warlock header file](cpp_module_00/Warlock.hpp)
+
+
 ```cpp
 class Warlock
 {
@@ -43,6 +48,8 @@ class Warlock
 
 > We also know which main we should have, as that is in the subject assignment.
 > So with this, here's the implementation of the cpp file:
+
+[Warlock code](cpp_module_00/Warlock.cpp)
 
 ```cpp
 #include "Warlock.hpp"
@@ -93,5 +100,7 @@ void Warlock::introduce() const
     std::cout << _name << ": I am " << _name << ", " << _title << "!" << std::endl;
 }
 ```
+[Main.cpp](cpp_module_00/main.cpp)
+
 
 [Go to CPP Module 01](2_CPP_MODULE_01.md)

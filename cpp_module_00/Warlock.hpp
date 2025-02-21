@@ -1,6 +1,9 @@
+#pragma once
+
 #include <iostream>
 
-class Warlock {
+class Warlock
+{
 
 	private :
 		Warlock & operator=(Warlock const & rhs);
