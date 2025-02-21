@@ -209,6 +209,7 @@ void	ATarget::getHitBySpell(ASpell const & spell) const
 }
 ```
 ```cpp
+// # DUMMY.hpp
 #pragma once
 #include "ATarget.hpp"
 
