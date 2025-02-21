@@ -41,7 +41,7 @@ class Warlock
 
 ### Implementation Details
 
-> The Warlock is also required to say some things. So it will say on creation, deletion and when the required introduce() method is call. He has specific messages for different actions:
+> The Warlock is also required to say some things. So it will say stuff on creation, on deletion and when the required introduce() method is called. He has specific messages for different actions:
 - **Creation**: `<NAME>: This looks like another boring day.`
 - **Deletion**: `<NAME>: My job here is done!`
 - **Introduce**: `<NAME>: I am <NAME>, <TITLE>!`
@@ -49,7 +49,6 @@ class Warlock
 > We also know which main we should have, as that is in the subject assignment.
 > So with this, here's the implementation of the cpp file:
 
-[Warlock code](cpp_module_00/Warlock.cpp)
 
 ```cpp
 #include "Warlock.hpp"
@@ -100,6 +99,7 @@ void Warlock::introduce() const
     std::cout << _name << ": I am " << _name << ", " << _title << "!" << std::endl;
 }
 ```
+[Warlock code](cpp_module_00/Warlock.cpp)
 [Main.cpp](cpp_module_00/main.cpp)
 
 
