@@ -121,6 +121,25 @@ class Fwoosh : public ASpell
         ASpell* clone() const;
 };
 ```
+```cpp
+#include "Fwoosh.hpp"
+
+Fwoosh::Fwoosh() : ASpell("Fwoosh", "fwooshed") 
+{
+
+}
+
+Fwoosh::~Fwoosh() 
+{
+
+}
+
+ASpell* Fwoosh::clone() const
+{
+	return (new Fwoosh());
+}
+```
+
 
 > Cool. Now lets fill in the cpp files:
 > That should be straight forward. Check the Files from the source if needed.
