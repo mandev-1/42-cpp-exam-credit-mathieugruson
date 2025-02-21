@@ -101,6 +101,13 @@ class ATarget
 		void	getHitBySpell(ASpell const & spell) const;
 };
 ```
+1. With ASpell, we again need to simply implement the constructor
+2. =operator for coppies
+3. Again the copy creation (ASpell::ASpell(ASpell const & obj)
+4. Simple destructor
+5. Getters for Name and Effects
+6. and Launch void ASpell::launch(ATarget const & target) const
+	- here the content will be "target.getHitBySpell(*this);"
 
 ```cpp
 // # This is ASpell.cpp
