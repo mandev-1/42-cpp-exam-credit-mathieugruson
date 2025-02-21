@@ -11,7 +11,7 @@ We need to make a Warlock class. The Warlock class needs to closely follow the C
 
 The Warlock class is required to have these things:
 - Private attributes (name and title as strings)
-- Getters and setters
+- Getters (for name and title) and setter (for title)
 - An introduce() function
 
 ### Header File
