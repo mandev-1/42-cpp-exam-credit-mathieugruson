@@ -150,9 +150,7 @@ ASpell* Fwoosh::clone() const
 ###### ATarget + Dummy:
 
 ```cpp
-
 // # ATARGET.hpp
-
 #pragma once
 #include <iostream>
 #include "ASpell.hpp"
@@ -173,16 +171,55 @@ class ATarget
 		virtual ATarget* clone() const = 0;
 		void	getHitBySpell(ASpell const & spell) const;
 };
+```
 
-// # The getHitBySpell from ATARGET.cpp
 
+```cpp
+#include "ATarget.hpp"
+
+ATarget::ATarget(std::string type) : _type(type)
+{
+
+}
+
+ATarget & ATarget::operator=(ATarget const & rhs)
+{
+	_type = rhs.getType();
+	return *this;
+}
+
+ATarget::ATarget(ATarget const & obj)
+{
+	*this = obj;
+}
+
+ATarget::~ATarget()
+{
+
+}
+
+std::string ATarget::getType() const
+{
+	return (_type);
+}
 
 void	ATarget::getHitBySpell(ASpell const & spell) const
 {
 	std::cout << _type << " has been " << spell.getEffects() << "!" << std::endl;
 }
 ```
+```cpp
+#pragma once
+#include "ATarget.hpp"
 
+class Dummy : public ATarget
+{
+	public :
+		Dummy();
+		~Dummy();
+		ATarget* clone() const;
+};
+```
 
 ```cpp
 // # DUMMY.CPP: 
