@@ -10,7 +10,7 @@ We need to make a Warlock class. The Warlock class needs to closely follow the C
 - **Copy Assignment Operator**: Assigns contents between objects
 
 We expect the Warlock to have:
-- private name and title
+- private <ins>name</ins> and <ins>title</ins>
 - only specific creation format
 - the introduce function and the derived getters (2x) and a setter(1x)
 
