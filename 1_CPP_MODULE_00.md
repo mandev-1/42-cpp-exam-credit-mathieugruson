@@ -9,12 +9,12 @@ We need to make a Warlock class. The Warlock class needs to closely follow the C
 - **Copy Constructor**: Creates a copy of an existing object
 - **Copy Assignment Operator**: Assigns contents between objects
 
-The Warlock class is required to have these things:
-- Private attributes (name and title as strings)
-- Getters (for name and title) and setter (for title)
-- An introduce() function
+We expect the Warlock to have:
+- private name and title
+- only specific creation format
+- the introduce function and the derived getters (2x) and a setter(1x)
 
-Therefore, we will make it so we achieve the following stuff:
+Therefore, we will do this in the code:
 1. Disallow Copying
 2. Force creation exclusively WITH name and title in the function (By making other constructors private)
 3. Add the setter for the Title (per assignment)
