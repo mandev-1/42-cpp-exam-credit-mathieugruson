@@ -1,7 +1,6 @@
 ## CPP 00
 
 [Subject](cpp_module_00/Subject.txt)
-
 ### Warlock Class Setup
 
 We need to make a Warlock class. The Warlock class needs to closely follow the Coplien Form (effectively the same thing as the Orthodox Canonical Form as you may know it), which includes:
