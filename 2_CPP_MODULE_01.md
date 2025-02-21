@@ -18,6 +18,8 @@ In this one, we will enhance the code from first excercise. We will add **Target
 	2. `void forgetSpell(std::string SpellName)`
 	3. `void launchSpell(std::string SpellName, ATarget const & target)`
 	4. [Go to New Warlock Spells](#new-warlock-spells)
+ 3. We will add ASpell class
+ 4. We will add a ATarget class (which is almost the same as ASpell)
 
 ------
 
@@ -25,8 +27,8 @@ In this one, we will enhance the code from first excercise. We will add **Target
 
 1. The plan is Implementing `ASpell.hpp`
 2. Then Implementing `ATarget.hpp`
-3. Once done, we implement the `Fwoosh` and `Dummy`
-4. Last, we arejust the `Warlock.hpp` & `Warlock.cpp`
+3. Once done, we also implement the `Fwoosh` and `Dummy` which inherit from these parent classes
+4. Last, we adjust the `Warlock.hpp` & `Warlock.cpp` to spell
 5. We test using the provided `main.cpp` (and compile with `g++`)
 
 ```cpp
