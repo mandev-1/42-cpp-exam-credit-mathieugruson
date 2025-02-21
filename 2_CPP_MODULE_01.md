@@ -9,6 +9,15 @@
 - In this one, we will enhance the code from first excercise. We will hit Target and Cast spells.
 > We will add **Spells**, **Target**, and _improve Warlock _so that he can **_Cast_**.
 
+```cpp
+#include "Warlock.hpp"
+#include "ASpell.hpp"
+#include "ATarget.hpp"
+#include "Dummy.hpp"
+#include "Fwoosh.hpp"
+```
+
+
 - His new functions will be learnSpell(), forgetSpell(), and launchSpell().
 - e need to make sure he can cast spells, and he has someone to shoot them at. This requires an abstract ASpell class, and abstract ATarget class which will then inherit into Fwoosh class (spell is a Fwoosh) and Dummy (target) class for the target.
 
