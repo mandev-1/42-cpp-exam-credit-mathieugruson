@@ -26,18 +26,24 @@ The Warlock class is required to have these things:
 class Warlock
 {
     private:
+//In Private, I set name, title
+//I disallow empty constructor by adding it to Private
+//Disallow Copying (using =) and via creation copying(Using Warlock(Warlock))
         Warlock & operator=(Warlock const & rhs); // Private - prevent unwanted copying
         Warlock(Warlock const & obj);             // Private - enforce controlled creation.
         Warlock();                                // Private - restrict instantiation without parameters.
         std::string _name;                        // Basic private assigned attribute _NAME
         std::string _title;                       // _TITLE attribute 
     public:
-        //force mandatory Name;Title 
+        //force mandatory Name;Title creation
         Warlock(const std::string& name, const std::string& title); // Public constructor - Name and Title
-        ~Warlock();                                                 // 
+        ~Warlock();
+        //Getter returns string.                                      // 
         std::string const & getName() const;                        // Returns the private name.
         std::string const & getTitle() const;                       // Returns the private title.
+        //Setter is Void
         void setTitle(std::string const & str);                     // Sets a new title for the warlock.
+        //Void funciton for Printing Introduction
         void introduce() const;                                     // Prints or logs an introduction message.
 };
 ```
