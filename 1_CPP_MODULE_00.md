@@ -14,6 +14,12 @@ The Warlock class is required to have these things:
 - Getters (for name and title) and setter (for title)
 - An introduce() function
 
+Moreover, it needs to:
+1. Disallow Copying
+2. Force creation exclusively WITH name and title in the function (By making other constructors private)
+3. Add the setter for the Title (per assignment)
+4. Add the Getters for Name and Title, as Name is private and Title too
+
 ### Header File
 
 [Warlock header file](cpp_module_00/Warlock.hpp)
