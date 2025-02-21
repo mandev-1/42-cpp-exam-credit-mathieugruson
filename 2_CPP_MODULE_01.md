@@ -2,20 +2,22 @@
 
 ### Warlock Class Setup
 
-> Nice, so the Warlock is basically already setup. 
-> We will add Spells, Target, and improve Warlock so that he can Cast.
+> Great job on the first one! The Warlock is basically already setup.
+>
+> In this one, he will start casting spells.
+> We will add **Spells**, **Target**, and _improve Warlock _so that he can **_Cast_**.
 
-
-> So, as said... in this second exercise, we add his Spellcasting abilities. This will require the Abstract Target, Abstract Spell, and actual Spell he cant cast (Fwoosh) and a target (a Dummy).
-
-His new functions will be learnSpell(), forgetSpell(), and launchSpell().
-> We need to make sure he can cast spells, and he has someone to shoot them at. This requires an abstract ASpell class, and abstract ATarget class which will then inherit into Fwoosh class (spell is a Fwoosh) and Dummy (target) class for the target.
+- His new functions will be learnSpell(), forgetSpell(), and launchSpell().
+- e need to make sure he can cast spells, and he has someone to shoot them at. This requires an abstract ASpell class, and abstract ATarget class which will then inherit into Fwoosh class (spell is a Fwoosh) and Dummy (target) class for the target.
 
 > SO, the PLAN is:
-1. Create ASpell class (hpp first)(cpp second)
-2. Create ATarget class 
-3. Create Fwoosh class (which is inheriting ASpell)()
-4. Create a Dummy class
+1. Create ASpell class (hpp first)(cpp second)(Abstract Spell class)
+2. Create ATarget class (Abstract Target class)
+3. Create Fwoosh class (which is inheriting ASpell)(Actual spell he cant cast)
+4. Create a Dummy class (Actual Target, which can be hit)
+
+> So, as said... in this second exercise, we add his Spellcasting abilities.
+> This will require the Abstract **Target**, Abstract **Spell**, and actual Spell he cant cast (Fwoosh) and a target (a Dummy).
 
 The Spell is very easy to create. It has a string of its name, and effects. The Fwoosh will be called that, and will say that the target has been "fwooshed". 
 
