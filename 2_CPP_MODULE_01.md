@@ -10,7 +10,7 @@
 
 - In this one, we will enhance the code from first excercise. We will add Target and Cast spells.
 
-- 1. We will add a SpellBook map to the Warlock's Privates : **std::map < std::string, ASpell * > _SpellBook;**
+1. We will add a SpellBook map to the Warlock's Privates : **std::map < std::string, ASpell * > _SpellBook;**
 2. The Warlock will get new functions:
 	1. void learnSpell(ASpell* spell)
 	2. void forgetSpell(std::string SpellName)
