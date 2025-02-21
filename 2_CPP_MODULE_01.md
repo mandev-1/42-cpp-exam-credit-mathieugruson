@@ -212,7 +212,11 @@ ASpell* Fwoosh::clone() const
 
 ###### ATarget cpp
 
+1. Copy Paste ASpell
+2. Change ATarget to ASpells
+3. Add the text output to "getHitBySpell"
 
+   
 ```cpp
 #include "ATarget.hpp"
 
@@ -281,6 +285,11 @@ ATarget* Dummy::clone() const
 ### Final adjustments of the Warlock files:
 
 > The Warlock must be able to learnSpell(), launchSpell() and forgetSpell()
+> We need to somehow store the spells, so we will:
+> 1. Import <map>
+> 2. Declare private "std::map < std::string, ASpell * > _SpellBook;"
+> 3. Add the three functions
+>    
 > We will also adjust the destructor, which is needed for the SpellBook deletions
 > We adjust the Warlock:
 ```cpp
@@ -289,8 +298,8 @@ ATarget* Dummy::clone() const
 #include <map>
 #include "ASpell.hpp"
 
-class Warlock {
-
+class Warlock
+{
 	private :
 		Warlock & operator=(Warlock const & rhs);
 		Warlock(Warlock const & obj);
@@ -311,7 +320,11 @@ class Warlock {
 		void launchSpell(std::string SpellName, ATarget const & target);  //This is new too
 };
 ```
-
+1. Moreover, the Warlock.cpp needs to go through the spellbook and clear it
+2. And we add the LearnSpell
+3. We add ForgetSpell
+4. We add LaunchSpell
+5. Afterwards we can add new main and test with g++
 
 ```cpp
 // ADJUSTMENTS TO WARLOCK.CPP
