@@ -1,9 +1,9 @@
 #pragma once
 #include "ATarget.hpp"
 
-class Dummy
+class Dummy : public ATarget
 {
-	public:
+	public :
 		Dummy();
 		~Dummy();
 		ATarget* clone() const;

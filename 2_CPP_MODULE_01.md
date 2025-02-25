@@ -9,6 +9,8 @@
 
 
 In this one, we will enhance the code from first excercise. We will add **Target** and **Cast spells**. Check out the [Subject](cpp_module_01/subject.txt).
+
+The Dummy and Fwoosh will be implemented too, as inherited classes. These are short implementation when [done right](#Fwoosh).
 -----
 
 ###### Da Plan:
